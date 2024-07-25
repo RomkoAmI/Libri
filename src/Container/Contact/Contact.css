@@ -1,0 +1,115 @@
+.Contact{
+    position: relative;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Contact__email{
+    background-color: #24130bba;
+    border: 3px solid #d280427f;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+.Contact__email_text{
+    display: flex;
+    flex-direction: column;
+}
+input[type="email"]{
+    background-color: #d7ac8b;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 50px;
+    border: none;
+}
+input::placeholder{
+    color: #24130bba;
+    font-weight: bold;
+}
+input[type="submit"]{
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    border: none;
+    background-color: #d28142;
+    color: #24130bba;
+    font-size: 16px;
+    cursor: pointer;
+}
+.Contact__email_img img{
+    width: 300px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+.Contact__data{
+    display: flex;
+}
+.Contact__data_item{
+    background-color: #24130bba;
+    border: 3px solid #d280427f;
+    border-radius: 20px;
+    padding: 15px 30px;
+    text-align: center;
+    margin: 50px 75px;
+}
+
+
+@media screen and (max-width: 1350px){
+    .Contact__data_item{
+        margin: 50px 25px;
+    }
+}
+@media screen and (max-width: 1050px){
+    .Contact__email{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Contact__email_text{
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    input[type="email"]{
+        margin-top: 20px;
+    }
+    .Contact__email_img img{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1050px){
+    .Contact__data{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    .Contact__email_img img{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 700px){
+    .Contact__email{
+        width: 400px;
+    }
+    .Contact__email_img img{
+        margin: 0;
+    }
+    .Contact__email_text h1{
+        font-size: 24px;
+    }
+    .Contact__email_text p{
+        font-size: 15px;
+    }
+    input[type="email"]{
+        font-size: 14px;
+        width: 300px;
+    }
+    input[type="submit"]{
+        font-size: 14px;
+    }
+}
